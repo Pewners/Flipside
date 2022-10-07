@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
+
+    public GameObject text;
+    bool inTrigger = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +18,22 @@ public class DialogueManager : MonoBehaviour
     void Update()
     {
         
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            text.SetActive(true);
+            inTrigger = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            text.SetActive(false);
+            inTrigger = false;
+        }
     }
 }
