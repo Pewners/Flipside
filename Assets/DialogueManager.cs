@@ -14,6 +14,14 @@ public class DialogueManager : MonoBehaviour
     public float textSpeed;
 
     private int index;
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            text.SetActive(true);
+            inTrigger = true;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -30,8 +38,9 @@ public class DialogueManager : MonoBehaviour
             text.SetActive(false);
             StartDialogue();
 
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetMouseButtonDown(0))
             {
+                Debug.Log("click");
                 if (textComponent.text == lines[index])
                 {
                     NextLine();
@@ -46,15 +55,7 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            text.SetActive(true);
-            inTrigger = true;
-        }
-    }
-
+    
     void StartDialogue()
     {
         index = 0;
@@ -72,15 +73,17 @@ public class DialogueManager : MonoBehaviour
 
     void NextLine()
     {
-        if (index < lines.Length - 1)
         {
-            index++;
-            textComponent.text = string.Empty;
-            StartCoroutine(TypeLine());
-        }
-        else
-        {
-            gameObject.SetActive(false);
+            if (index < lines.Length - 1)
+            {
+                index++;
+                textComponent.text = string.Empty;
+                StartCoroutine(TypeLine());
+            }
+            else
+            {
+                text.SetActive(false);
+            }
         }
     }
 
