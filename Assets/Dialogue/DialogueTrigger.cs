@@ -31,7 +31,8 @@ public class DialogueTrigger : MonoBehaviour
         if (playerInRange)
         {
             visualCue.SetActive(true);
-            if (InputManager.GetInstance().GetInteractPressed())
+            //if (InputManager.GetInstance().GetInteractPressed())
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log(inkJSON.text);
             }
