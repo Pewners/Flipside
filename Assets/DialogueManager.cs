@@ -22,6 +22,14 @@ public class DialogueManager : MonoBehaviour
             inTrigger = true;
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            text.SetActive(false);
+            inTrigger = false;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +46,7 @@ public class DialogueManager : MonoBehaviour
             text.SetActive(false);
             StartDialogue();
 
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.F))
             {
                 Debug.Log("click");
                 if (textComponent.text == lines[index])
@@ -84,15 +92,6 @@ public class DialogueManager : MonoBehaviour
             {
                 text.SetActive(false);
             }
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            text.SetActive(false);
-            inTrigger = false;
         }
     }
 }
