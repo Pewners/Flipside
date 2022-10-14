@@ -4,9 +4,6 @@ public class CharacterController : MonoBehaviour
 {
     public float maxSpeed;
     public float normalSpeed = 10.0f;
-    //public float sprintSpeed = 40.0f;
-    //public float maxSprint = 5.0f;
-    //public float sprintTimer;
 
     float rotation = 0.0f;
     float camRotation = 0.0f;
@@ -18,17 +15,10 @@ public class CharacterController : MonoBehaviour
     bool isOnGround;
     public GameObject groundChecker;
     public LayerMask groundLayer;
-    //public float jumpForce = 500.0f;
-
-    //Animator myAnim;
 
     void Start()
     {
-        //myAnim = GetComponentInChildren<Animator>();
-
         Cursor.lockState = CursorLockMode.Locked;
-
-        //sprintTimer = maxSprint;
 
         cam = GameObject.Find("Main Camera");
         myRigidBody = GetComponent<Rigidbody>();
@@ -38,53 +28,14 @@ public class CharacterController : MonoBehaviour
     void Update()
     {
         isOnGround = Physics.CheckSphere(groundChecker.transform.position, 0.1f, groundLayer);
-        //myAnim.SetBool("isOnGround", isOnGround);
-
-        //if (isOnGround == true && Input.GetKeyDown(KeyCode.Space))
-        //{
-        //myAnim.SetTrigger("jumped");
-        //myRigidBody.AddForce(transform.up * jumpForce);
-        //}
-
-        //if (Input.GetKey(KeyCode.LeftShift) && sprintTimer > 0.0f)
-        //{
-        //maxSpeed = sprintSpeed;
-        //sprintTimer = sprintTimer - Time.deltaTime;
-        //} else
-        //{
-        //maxSpeed = normalSpeed;
-        //if (Input.GetKey(KeyCode.LeftShift) == false)
-        //{
-        //sprintTimer = sprintTimer + Time.deltaTime;
-        //}
-        //}
-
-        //sprintTimer = Mathf.Clamp(sprintTimer, 0.0f, maxSprint);
 
         Vector3 newVelocity = (transform.forward * Input.GetAxis("Horizontal") * maxSpeed + (transform.right * -Input.GetAxis("Vertical") * maxSpeed));
         myRigidBody.velocity = new Vector3(newVelocity.x, myRigidBody.velocity.y, newVelocity.z);
-
-        //myAnim.SetFloat("speed", newVelocity.magnitude);
 
         rotation = rotation + Input.GetAxis("Mouse X") * rotationSpeed;
         transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));
 
         camRotation = camRotation + Input.GetAxis("Mouse Y") * camRotationSpeed;
         cam.transform.localRotation = Quaternion.Euler(new Vector3(Mathf.Clamp(-camRotation, -45f, 30f), -90f, 0.0f));
-
-        //if (Input.GetKey(KeyCode.Escape))
-        //{
-        //    SceneManager.LoadScene(5);
-        //}
     }
-
-//    void OnTriggerEnter(Collider obj)
-//    {
-//        if (obj.gameObject.CompareTag("Drug"))
-//        {
-//            normalSpeed = normalSpeed + 7f;
-//            maxSpeed = maxSpeed + 7f;
-//            Debug.Log("Speed");
-//        }
-//    }
 }
