@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class CharacterController : MonoBehaviour
 {
@@ -29,7 +26,7 @@ public class CharacterController : MonoBehaviour
     {
         //myAnim = GetComponentInChildren<Animator>();
 
-        //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
 
         //sprintTimer = maxSprint;
 
@@ -64,7 +61,7 @@ public class CharacterController : MonoBehaviour
 
         //sprintTimer = Mathf.Clamp(sprintTimer, 0.0f, maxSprint);
 
-        Vector3 newVelocity = (transform.forward * Input.GetAxis("Vertical") * maxSpeed + (transform.right * Input.GetAxis("Horizontal") * maxSpeed));
+        Vector3 newVelocity = (transform.forward * Input.GetAxis("Horizontal") * maxSpeed + (transform.right * -Input.GetAxis("Vertical") * maxSpeed));
         myRigidBody.velocity = new Vector3(newVelocity.x, myRigidBody.velocity.y, newVelocity.z);
 
         //myAnim.SetFloat("speed", newVelocity.magnitude);
@@ -73,7 +70,7 @@ public class CharacterController : MonoBehaviour
         transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));
 
         camRotation = camRotation + Input.GetAxis("Mouse Y") * camRotationSpeed;
-        cam.transform.localRotation = Quaternion.Euler(new Vector3(-camRotation, 0.0f, 0.0f));
+        cam.transform.localRotation = Quaternion.Euler(new Vector3(Mathf.Clamp(-camRotation, -45f, 30f), -90f, 0.0f));
 
         //if (Input.GetKey(KeyCode.Escape))
         //{
