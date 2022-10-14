@@ -12,6 +12,8 @@ public class DialogueTrigger : MonoBehaviour
 
     private bool playerInRange;
 
+    private dialogueManager dialogueManager;
+
     private void Awake()
     {
         playerInRange = false;
@@ -28,13 +30,14 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Update()
     {
+        dialogueManager = GetComponent<dialogueManager>();
         if (playerInRange)
         {
             visualCue.SetActive(true);
             //if (InputManager.GetInstance().GetInteractPressed())
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log(inkJSON.text);
+                dialogueManager.GetInstance().EnterDialogueMode(inkJSON);
             }
         }
 
