@@ -10,6 +10,11 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI dialogueText;
 
+    [Header("Choices UI")]
+
+    [SerializeField] private GameObject[] choices;
+    private TextMeshProUGUI[] choicesText;
+
     private Story currentStory;
     public bool dialogueIsPlaying { get; private set; }
 
@@ -33,6 +38,13 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
+
+        choicesText = new TextMeshProUGUI[choices.Length];
+        int index = 0;
+        foreach (GameObject choice in choices)
+        {
+            choicesText[index] = choice.GetComponentInChildren<TextMeshProUGUI>();
+        }
     }
 
     private void Update()
@@ -42,7 +54,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
             ContinueStory();
         }
