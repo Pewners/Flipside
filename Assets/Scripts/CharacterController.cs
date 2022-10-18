@@ -27,6 +27,10 @@ public class CharacterController : MonoBehaviour
 
     void Update()
     {
+        if (DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            return;
+        }
         isOnGround = Physics.CheckSphere(groundChecker.transform.position, 0.1f, groundLayer);
 
         Vector3 newVelocity = (transform.forward * Input.GetAxis("Horizontal") * maxSpeed + (transform.right * -Input.GetAxis("Vertical") * maxSpeed));
@@ -37,9 +41,6 @@ public class CharacterController : MonoBehaviour
 
         camRotation = camRotation + Input.GetAxis("Mouse Y") * camRotationSpeed;
         cam.transform.localRotation = Quaternion.Euler(new Vector3(Mathf.Clamp(-camRotation, -45f, 30f), -90f, 0.0f));
-        if (DialogueManager.GetInstance().dialogueIsPlaying)
-        {
-            return;
-        }
+
     }
 }

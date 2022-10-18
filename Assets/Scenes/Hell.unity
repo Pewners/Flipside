@@ -773,7 +773,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 1055626081}
   dialogueText: {fileID: 901394616}
-  choices: []
+  choices:
+  - {fileID: 2099163564}
+  - {fileID: 1329050925}
+  - {fileID: 347809880}
 --- !u!1 &209901290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1664,7 +1667,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 347809883}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 168689127}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: MakeChoice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &347809883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2096,7 +2111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 611711084}
-  inkJSON: {fileID: 4900000, guid: 8324e6b0e3b404b48a6fef9c5676db39, type: 3}
+  inkJSON: {fileID: 4900000, guid: e2a86552177592845ad5105c53a76de5, type: 3}
 --- !u!4 &546396536 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6902396201503852243, guid: 67a8bd3bee5745345b15053c866f5ebc, type: 3}
@@ -4284,7 +4299,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1329050928}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 168689127}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: MakeChoice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1329050928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6203,7 +6230,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2099163567}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 168689127}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: MakeChoice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2099163567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7228,6 +7267,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8564886143325543564, guid: 1e1762a65d7a1c9438076b3e1a83f0ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0348
+      objectReference: {fileID: 0}
+    - target: {fileID: 8564886143325543564, guid: 1e1762a65d7a1c9438076b3e1a83f0ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0468
+      objectReference: {fileID: 0}
+    - target: {fileID: 8564886143325543564, guid: 1e1762a65d7a1c9438076b3e1a83f0ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0012
+      objectReference: {fileID: 0}
     - target: {fileID: 8564886143961133423, guid: 1e1762a65d7a1c9438076b3e1a83f0ab, type: 3}
       propertyPath: m_RootOrder
       value: 15
