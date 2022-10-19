@@ -20,6 +20,8 @@ public class DialogueManager : MonoBehaviour
 
     private static DialogueManager instance;
 
+    public bool choicesDisplayed;
+
     private void Awake()
     {
         if (instance != null)
@@ -83,10 +85,12 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueText.text = currentStory.Continue();
             DisplayChoices();
+            choicesDisplayed = true;
         }
         else
         {
             ExitDialogueMode();
+            choicesDisplayed = false;
         }
     }
 
@@ -98,6 +102,9 @@ public class DialogueManager : MonoBehaviour
         {
             Debug.Log("Too many choices!");
         }
+        Debug.Log(choices.Length);
+        Debug.Log(currentChoices.Count);
+        Debug.Log(currentStory);
 
         int index = 0;
         foreach(Choice choice in currentChoices)
