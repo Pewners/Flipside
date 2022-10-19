@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5543664, g: 0.24149299, b: 0.01119844, a: 1}
+  m_IndirectSpecularColor: {r: 0.55421907, g: 0.24144715, b: 0.011446658, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -777,6 +777,7 @@ MonoBehaviour:
   - {fileID: 2099163564}
   - {fileID: 1329050925}
   - {fileID: 347809880}
+  choicesDisplayed: 0
 --- !u!1 &209901290
 GameObject:
   m_ObjectHideFlags: 0
@@ -3024,8 +3025,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 375.89392, y: -75.268196}
-  m_SizeDelta: {x: 729.7879, y: 128.5364}
+  m_AnchoredPosition: {x: 291.66077, y: -75.268196}
+  m_SizeDelta: {x: 561.3215, y: 128.5364}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &901394616
 MonoBehaviour:
@@ -3056,8 +3057,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278201680
+  m_fontColor: {r: 0.3137255, g: 0.1764706, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3508,8 +3509,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 10}
-  m_SizeDelta: {x: 750, y: 150}
+  m_AnchoredPosition: {x: 0, y: 13}
+  m_SizeDelta: {x: 582.3997, y: 174}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1055626083
 MonoBehaviour:
@@ -3524,15 +3525,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 0e7ade2e8e82d064f8d0c3241f00b6c1, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
