@@ -6,6 +6,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     [Header("Visual Cue")]
     [SerializeField] private GameObject visualCue;
+    [SerializeField] private GameObject pressButton;
 
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
@@ -15,6 +16,7 @@ public class DialogueTrigger : MonoBehaviour
     private void Awake()
     {
         playerInRange = false;
+        pressButton.SetActive(false);
         visualCue.SetActive(false);
     }
 
@@ -31,7 +33,7 @@ public class DialogueTrigger : MonoBehaviour
         if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying)
         {
             visualCue.SetActive(true);
-            //if (InputManager.GetInstance().GetInteractPressed())
+            pressButton.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
@@ -41,6 +43,7 @@ public class DialogueTrigger : MonoBehaviour
         else
         {
             visualCue.SetActive(false);
+            
         }
     }
 
@@ -49,6 +52,7 @@ public class DialogueTrigger : MonoBehaviour
         if (other.tag == "Player")
         {
             playerInRange = false;
+            pressButton.SetActive(false);
         }
     }
 }
