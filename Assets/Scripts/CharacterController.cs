@@ -16,6 +16,8 @@ public class CharacterController : MonoBehaviour
     public GameObject groundChecker;
     public LayerMask groundLayer;
 
+    public float jumpForce;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -42,5 +44,9 @@ public class CharacterController : MonoBehaviour
         camRotation = camRotation + Input.GetAxis("Mouse Y") * camRotationSpeed;
         cam.transform.localRotation = Quaternion.Euler(new Vector3(Mathf.Clamp(-camRotation, -45f, 30f), -90f, 0.0f));
 
+        if(isOnGround && Input.GetKeyDown(KeyCode.Space))
+        {
+            myRigidBody.AddForce(transform.up * jumpForce);
+        }
     }
 }
