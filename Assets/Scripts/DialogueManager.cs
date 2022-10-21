@@ -23,6 +23,8 @@ public class DialogueManager : MonoBehaviour
 
     public bool choicesDisplayed;
 
+    int currChoice = 0;
+
     private void Awake()
     {
         if (instance != null)
@@ -55,7 +57,11 @@ public class DialogueManager : MonoBehaviour
     {
         if (!dialogueIsPlaying)
         {
+            Cursor.lockState = CursorLockMode.Locked;
             return;
+        } else
+        {
+            Cursor.lockState = CursorLockMode.None;
         }
 
         if (Input.GetMouseButtonDown(1))
@@ -85,6 +91,7 @@ public class DialogueManager : MonoBehaviour
         if (currentStory.canContinue)
         {
             dialogueText.text = currentStory.Continue();
+
             DisplayChoices();
             choicesDisplayed = true;
         }
@@ -127,7 +134,7 @@ public class DialogueManager : MonoBehaviour
     {
         EventSystem.current.SetSelectedGameObject(null);
         yield return new WaitForEndOfFrame();
-        EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+        EventSystem.current.SetSelectedGameObject(choices[currChoice].gameObject);
     }
 
     public void MakeChoice(int choiceIndex)

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5543664, g: 0.24149299, b: 0.01119844, a: 1}
+  m_IndirectSpecularColor: {r: 0.55421907, g: 0.24144715, b: 0.011446658, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -772,7 +772,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168689125}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: beed5c8151d38174c9cddc312b2cf42d, type: 3}
   m_Name: 
@@ -878,7 +878,7 @@ Transform:
   m_LocalScale: {x: 0.5869955, y: 0.5869955, z: 0.5869955}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -26.873, z: 0}
 --- !u!4 &219347876 stripped
 Transform:
@@ -2125,6 +2125,9 @@ MonoBehaviour:
   visualCue: {fileID: 611711084}
   pressButton: {fileID: 1342358211}
   inkJSON: {fileID: 4900000, guid: 8324e6b0e3b404b48a6fef9c5676db39, type: 3}
+  dialoguePanel: {fileID: 0}
+  dialogueText: {fileID: 0}
+  choices: []
 --- !u!4 &546396536 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6902396201503852243, guid: 67a8bd3bee5745345b15053c866f5ebc, type: 3}
@@ -3013,7 +3016,7 @@ Transform:
   - {fileID: 996384540}
   - {fileID: 1654734119}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &873075532
 PrefabInstance:
@@ -3501,6 +3504,9 @@ MonoBehaviour:
   visualCue: {fileID: 1654734118}
   pressButton: {fileID: 1342358211}
   inkJSON: {fileID: 4900000, guid: e2a86552177592845ad5105c53a76de5, type: 3}
+  dialoguePanel: {fileID: 1055626081}
+  dialogueText: {fileID: 901394614}
+  choices: []
 --- !u!65 &996384542
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3657,7 +3663,7 @@ Transform:
   m_LocalScale: {x: 3.9670238, y: 3.9670238, z: 2.7883415}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1036933391 stripped
 Transform:
@@ -3769,7 +3775,7 @@ GameObject:
   - component: {fileID: 1055626084}
   - component: {fileID: 1055626083}
   m_Layer: 5
-  m_Name: DialoguePanel
+  m_Name: SubstituteDialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5018,7 +5024,7 @@ Transform:
   m_LocalScale: {x: 0.24701393, y: 0.24701393, z: 0.24701393}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!850595691 &1404936769
 LightingSettings:
@@ -6423,6 +6429,9 @@ MonoBehaviour:
   visualCue: {fileID: 818171295}
   pressButton: {fileID: 1342358211}
   inkJSON: {fileID: 4900000, guid: e1ca46bb62d97c7499561b6d01077818, type: 3}
+  dialoguePanel: {fileID: 0}
+  dialogueText: {fileID: 0}
+  choices: []
 --- !u!65 &1931885509
 BoxCollider:
   m_ObjectHideFlags: 0

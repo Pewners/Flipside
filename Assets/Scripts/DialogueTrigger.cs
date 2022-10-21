@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using Ink.Runtime;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -11,6 +15,14 @@ public class DialogueTrigger : MonoBehaviour
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
 
+    [Header("Dialogue UI")]
+    [SerializeField] private GameObject dialoguePanel;
+    [SerializeField] private GameObject dialogueText;
+
+    [Header("Choices UI")]
+    [SerializeField] private GameObject[] choices;
+    private TextMeshProUGUI[] choicesText;
+
     private bool playerInRange;
 
     private void Awake()
@@ -18,6 +30,8 @@ public class DialogueTrigger : MonoBehaviour
         playerInRange = false;
         pressButton.SetActive(false);
         visualCue.SetActive(false);
+        dialoguePanel.SetActive(false);
+        dialogueText.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -36,14 +50,13 @@ public class DialogueTrigger : MonoBehaviour
             pressButton.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
-                DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+                PlayDialogue();
             }
         }
 
         else
         {
             visualCue.SetActive(false);
-            
         }
     }
 
@@ -54,5 +67,11 @@ public class DialogueTrigger : MonoBehaviour
             playerInRange = false;
             pressButton.SetActive(false);
         }
+    }
+
+    private IEnumerator PlayDialogue()
+    {
+        dialoguePanel.SetActive(true);
+        yield return new WaitForEndOfFrame();
     }
 }
