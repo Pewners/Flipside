@@ -8,9 +8,5 @@ using UnityEngine.EventSystems;
 
 public class BetterDialogueManager : MonoBehaviour
 {
-
-
-
-
-
+    
 }

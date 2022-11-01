@@ -39,24 +39,38 @@ public class DialogueTrigger : MonoBehaviour
         if (other.tag == "Player")
         {
             playerInRange = true;
+            visualCue.SetActive(true);
+            pressButton.SetActive(true);
         }
     }
 
     private void Update()
     {
-        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying)
+        if (playerInRange) //&& !DialogueManager.GetInstance().dialogueIsPlaying)
         {
-            visualCue.SetActive(true);
-            pressButton.SetActive(true);
+            
+            
             if (Input.GetKeyDown(KeyCode.E))
             {
-                PlayDialogue();
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                dialoguePanel.SetActive(true);
+                dialogueText.SetActive(true);
+                pressButton.SetActive(false);
+                //PlayDialogue();
+            }
+            if (Input.GetMouseButtonDown(1))
+            {
+                Destroy(dialoguePanel);
+                Destroy(visualCue);
+                //Destroy(pressButton);
+                Destroy(gameObject.GetComponent<Collider>());
             }
         }
 
         else
         {
-            visualCue.SetActive(false);
+
         }
     }
 
@@ -66,12 +80,13 @@ public class DialogueTrigger : MonoBehaviour
         {
             playerInRange = false;
             pressButton.SetActive(false);
+            visualCue.SetActive(false);
         }
     }
 
-    private IEnumerator PlayDialogue()
-    {
-        dialoguePanel.SetActive(true);
-        yield return new WaitForEndOfFrame();
-    }
+    //private IEnumerator PlayDialogue()
+    //{
+    //    dialoguePanel.SetActive(true);
+    //    yield return new WaitForEndOfFrame();
+   // }
 }
