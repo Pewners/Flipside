@@ -243,6 +243,7 @@ MonoBehaviour:
   difference: 0
   redBar: {fileID: 739260643}
   greenBar: {fileID: 639537743}
+  choices: {fileID: 283558276}
   timer: 0
 --- !u!1001 &14095113
 PrefabInstance:
@@ -1217,6 +1218,8 @@ MonoBehaviour:
   goodText: {fileID: 322366157}
   badText: {fileID: 2024006381}
   prompt: {fileID: 901394614}
+  goodTask: 0
+  badTask: 0
 --- !u!1 &295439778
 GameObject:
   m_ObjectHideFlags: 0

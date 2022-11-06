@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: aa3e8aadecab0f840b85e67e5fd0417f
   - enabled: 1
+    path: Assets/Scenes/HeavenOrHell.unity
+    guid: 12e7b088139b567448dc0e7a6e67b7dc
+  - enabled: 1
     path: Assets/Scenes/Heaven.unity
     guid: c4894a95fba39184681d3dc8cc2312e6
   - enabled: 1
