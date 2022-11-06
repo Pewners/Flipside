@@ -760,6 +760,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5302568919011541938, guid: 3b6f41d7088ab6a4abd300133f86fb3d, type: 3}
+--- !u!1 &339750074 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8513424388201257645, guid: a39f2b5387c018e4aa025cbdf29848fc, type: 3}
+  m_PrefabInstance: {fileID: 1885539751}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &339750078
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339750074}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.011622662, y: 0.010106186, z: 0.015739841}
+  m_Center: {x: 0.0000000018626451, y: 0.005308865, z: 6.9849193e-10}
 --- !u!1001 &368362401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -823,6 +841,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16ec422dcc0a03d478c7aaf1863af127, type: 2}
     - target: {fileID: 919132149155446097, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
       propertyPath: m_Name
       value: Mole hill
@@ -1154,6 +1176,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70b512328aff00e4991d62ff7871c007, type: 3}
+--- !u!1 &569108117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8513424388201257645, guid: a39f2b5387c018e4aa025cbdf29848fc, type: 3}
+  m_PrefabInstance: {fileID: 257054394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &569108121
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569108117}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.011622663, y: 0.010106186, z: 0.015739843}
+  m_Center: {x: 0.0000000055879354, y: 0.005308865, z: 9.313226e-10}
 --- !u!4 &586709622 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
@@ -1571,6 +1611,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16ec422dcc0a03d478c7aaf1863af127, type: 2}
     - target: {fileID: 919132149155446097, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
       propertyPath: m_Name
       value: Mole hill (7)
@@ -2037,6 +2081,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16ec422dcc0a03d478c7aaf1863af127, type: 2}
     - target: {fileID: 919132149155446097, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
       propertyPath: m_Name
       value: Mole hill (4)
@@ -2110,6 +2158,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16ec422dcc0a03d478c7aaf1863af127, type: 2}
     - target: {fileID: 919132149155446097, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
       propertyPath: m_Name
       value: Mole hill (2)
@@ -2183,6 +2235,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16ec422dcc0a03d478c7aaf1863af127, type: 2}
     - target: {fileID: 919132149155446097, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
       propertyPath: m_Name
       value: Mole hill (3)
@@ -2682,11 +2738,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417985529}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1458129531 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8513424388201257645, guid: a39f2b5387c018e4aa025cbdf29848fc, type: 3}
+  m_PrefabInstance: {fileID: 206468083}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1458129533
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458129531}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.011622664, y: 0.010106186, z: 0.015739843}
+  m_Center: {x: -0.0000000018626451, y: 0.005308865, z: 0}
 --- !u!4 &1464998041 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a39f2b5387c018e4aa025cbdf29848fc, type: 3}
   m_PrefabInstance: {fileID: 1885539751}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1472073977 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8513424388201257645, guid: 70b512328aff00e4991d62ff7871c007, type: 3}
+  m_PrefabInstance: {fileID: 475096104}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1472073978
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472073977}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03360393, y: 0.043698013, z: 0.09449904}
+  m_Center: {x: -0.003950651, y: 0.00058193784, z: 0.000659706}
 --- !u!1 &1504358386 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7478d32334d78b34ca0967ad993a1dd8, type: 3}
@@ -2779,6 +2871,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16ec422dcc0a03d478c7aaf1863af127, type: 2}
     - target: {fileID: 919132149155446097, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
       propertyPath: m_Name
       value: Mole hill (6)
@@ -3022,7 +3118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.05204
+      value: -5.62
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3030,7 +3126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.686756
+      value: -9.74
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3060,6 +3156,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16ec422dcc0a03d478c7aaf1863af127, type: 2}
     - target: {fileID: 919132149155446097, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
       propertyPath: m_Name
       value: Mole hill (5)
@@ -3359,6 +3459,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16ec422dcc0a03d478c7aaf1863af127, type: 2}
     - target: {fileID: 919132149155446097, guid: ea76c7f1732bd4845a1c6541502a6cde, type: 3}
       propertyPath: m_Name
       value: Mole hill (1)
@@ -3642,7 +3746,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 3b6f41d7088ab6a4abd300133f86fb3d, type: 3}
+  - {fileID: 2100000, guid: 5186e1d9eadbdca4397bf05767894c49, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3826,7 +3930,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 3b6f41d7088ab6a4abd300133f86fb3d, type: 3}
+  - {fileID: 2100000, guid: 071ac4296cade5f44bffec5d5e05ce8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4214,7 +4318,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 3b6f41d7088ab6a4abd300133f86fb3d, type: 3}
+  - {fileID: 2100000, guid: 071ac4296cade5f44bffec5d5e05ce8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4581,7 +4685,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 3b6f41d7088ab6a4abd300133f86fb3d, type: 3}
+  - {fileID: 2100000, guid: 071ac4296cade5f44bffec5d5e05ce8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4771,7 +4875,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 3b6f41d7088ab6a4abd300133f86fb3d, type: 3}
+  - {fileID: 2100000, guid: 071ac4296cade5f44bffec5d5e05ce8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4851,7 +4955,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6772479523241047636}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.06682, y: 0.0288, z: 0.06763}
+  m_LocalPosition: {x: 0.0656, y: 0.0294, z: 0.0665}
   m_LocalScale: {x: 2.3008764, y: 1.2087444, z: 2.3008764}
   m_Children: []
   m_Father: {fileID: 8804625046944290062}
@@ -5228,7 +5332,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 3b6f41d7088ab6a4abd300133f86fb3d, type: 3}
+  - {fileID: 2100000, guid: 071ac4296cade5f44bffec5d5e05ce8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5775,7 +5879,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 3b6f41d7088ab6a4abd300133f86fb3d, type: 3}
+  - {fileID: 2100000, guid: 071ac4296cade5f44bffec5d5e05ce8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5850,7 +5954,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 3b6f41d7088ab6a4abd300133f86fb3d, type: 3}
+  - {fileID: 2100000, guid: 071ac4296cade5f44bffec5d5e05ce8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
