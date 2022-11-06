@@ -10,6 +10,9 @@ public class Choices : MonoBehaviour
     public GameObject badText;
     public GameObject prompt;
 
+    public bool goodTask;
+    public bool badTask;
+
     private void Start()
     {
         prompt.SetActive(true);
@@ -23,6 +26,7 @@ public class Choices : MonoBehaviour
             prompt.SetActive(false);
             goodText.SetActive(false);
             badText.SetActive(false);
+            goodTask = true;
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -31,6 +35,7 @@ public class Choices : MonoBehaviour
             prompt.SetActive(false);
             goodText.SetActive(false);
             badText.SetActive(false);
+            badTask = true;
         }
 
         if (Input.GetMouseButtonDown(1))
