@@ -7505,7 +7505,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hi
+  m_text: 'Welcome to Hell!
 
 
     Right Cick to advance'
