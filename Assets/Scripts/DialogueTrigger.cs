@@ -52,8 +52,6 @@ public class DialogueTrigger : MonoBehaviour
             
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
                 dialoguePanel.SetActive(true);
                 dialogueText.SetActive(true);
                 pressButton.SetActive(false);
